@@ -16,6 +16,7 @@ import { useRouter } from 'next/navigation';
 const AddPropertyModal = () => {
     
 
+
     const [currentStep, setCurrentStep] = useState(1);
     const [errors, setErrors] = useState<string[]>([]);
     const [dataCategory, setDataCategory] = useState('');
@@ -28,12 +29,13 @@ const AddPropertyModal = () => {
     const [dataCountry, setDataCountry] = useState<SelectCountryValue>();
     const [dataImage, setDataImage] = useState<File | null>(null);
 
-
+    
 
 
     const addPropertyModal = useAddPropertyModal();
     const router = useRouter();
 
+    
 
 
     const setCategory = (category: string) => {
@@ -48,7 +50,7 @@ const AddPropertyModal = () => {
         }
     }
 
-
+    
 
     const submitForm = async () => {
         console.log('submitForm');
@@ -93,6 +95,8 @@ const AddPropertyModal = () => {
         }
     }
 
+    
+    
 
     const content = (
         <>
