@@ -14,8 +14,8 @@ import apiService from '@/app/services/apiService';
 import { useRouter } from 'next/navigation';
 
 const AddPropertyModal = () => {
-    
-
+    //
+    // States
 
     const [currentStep, setCurrentStep] = useState(1);
     const [errors, setErrors] = useState<string[]>([]);
@@ -29,14 +29,14 @@ const AddPropertyModal = () => {
     const [dataCountry, setDataCountry] = useState<SelectCountryValue>();
     const [dataImage, setDataImage] = useState<File | null>(null);
 
-    
-
+    //
+    //
 
     const addPropertyModal = useAddPropertyModal();
     const router = useRouter();
 
-    
-
+    //
+    // Set datas
 
     const setCategory = (category: string) => {
         setDataCategory(category)
@@ -50,7 +50,8 @@ const AddPropertyModal = () => {
         }
     }
 
-    
+    //
+    // SUbmit
 
     const submitForm = async () => {
         console.log('submitForm');
@@ -95,8 +96,8 @@ const AddPropertyModal = () => {
         }
     }
 
-    
-    
+    //
+    //
 
     const content = (
         <>

@@ -3,7 +3,7 @@
 import { useCallback, useEffect, useState } from "react";
 
 interface ModalProps {
-    label:string;
+    label: string;
     close: () => void;
     content: React.ReactElement;
     isOpen: boolean;
